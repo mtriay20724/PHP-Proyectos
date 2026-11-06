@@ -75,7 +75,7 @@ final class FormularioRequest{
             }
         }
         // --- Correo (obligatorio, formato válido, máx. 255 caracteres) ---
-        if ($d['correo'] === '') {
+        if ($d['}correo'] === '') {
             $this->errores['correo'] = "El correo es obligatorio.";
         } elseif (mb_strlen($d['correo']) > 255) {
             $this->errores['correo'] = "El correo no puede superar los 255 caracteres.";
